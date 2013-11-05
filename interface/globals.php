@@ -8,7 +8,7 @@ if (!defined('IS_WINDOWS'))
 // too small.  You might choose to adjust them further.
 //
 ini_set('session.gc_maxlifetime', '14400');
-
+error_reporting(0);
 /* If the includer didn't specify, assume they want us to "fake" register_globals. */
 if (!isset($fake_register_globals)) {
 	$fake_register_globals = TRUE;
